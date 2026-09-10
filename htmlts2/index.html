@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Todo List</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 500px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .input-area {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      #taskInput {
+        flex: 1;
+        padding: 8px;
+        font-size: 16px;
+      }
+
+      #addBtn {
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #taskList {
+        list-style: none;
+        padding: 0;
+      }
+
+      #taskList li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      /* CSS-only strikethrough: when the checkbox inside li is checked,
+     style the sibling span with that class */
+      #taskList li input[type="checkbox"]:checked ~ span {
+        text-decoration: line-through;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Tasks</h1>
+
+    <div class="input-area">
+      <input type="text" id="taskInput" placeholder="Enter a task..." />
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <ul id="taskList">
+      <!-- Example tasks, remove/replace with JS later -->
+    </ul>
+    <script src="/htmlts2/dist/app.js"></script>
+  </body>
+</html>

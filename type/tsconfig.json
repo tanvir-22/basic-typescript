@@ -1,0 +1,5 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true //it will not allow to transpile if ts file has error
+  }
+}
